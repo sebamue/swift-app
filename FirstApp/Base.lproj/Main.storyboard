@@ -35,23 +35,48 @@
                                     <action selector="makeCool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wP6-Jl-87w"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqm-qh-Fhc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ESw-qb-awH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyU-vl-8zf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xMn-vq-AV6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rHS-dB-PdK" firstAttribute="top" secondItem="tns-fx-eAB" secondAttribute="bottom" constant="30" id="2WW-IE-sKB"/>
+                            <constraint firstItem="zqm-qh-Fhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQz-X9-Idy"/>
                             <constraint firstItem="tns-fx-eAB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GjR-g1-XFH"/>
+                            <constraint firstItem="zqm-qh-Fhc" firstAttribute="top" secondItem="rHS-dB-PdK" secondAttribute="bottom" constant="28" id="KE7-lP-73S"/>
                             <constraint firstItem="rHS-dB-PdK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rbs-Wf-Onp"/>
                             <constraint firstItem="tns-fx-eAB" firstAttribute="top" secondItem="PMe-xF-je7" secondAttribute="bottom" constant="50" id="TU9-oS-leL"/>
                             <constraint firstItem="PMe-xF-je7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UmB-b1-jZq"/>
+                            <constraint firstItem="dyU-vl-8zf" firstAttribute="top" secondItem="zqm-qh-Fhc" secondAttribute="bottom" constant="18" id="Vxm-rQ-YWM"/>
+                            <constraint firstItem="dyU-vl-8zf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQP-uW-h7a"/>
                             <constraint firstItem="PMe-xF-je7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1d-dG-ttM"/>
+                            <constraint firstItem="zqm-qh-Fhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6S-sP-IVt"/>
+                            <constraint firstItem="zqm-qh-Fhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vwj-Oe-uFu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="zqm-qh-Fhc" id="kKo-gx-KNr"/>
+                        <outlet property="text2" destination="dyU-vl-8zf" id="oI1-qF-vPf"/>
                         <outlet property="theLabel" destination="PMe-xF-je7" id="wyF-0p-iUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
